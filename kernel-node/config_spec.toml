@@ -1,0 +1,17 @@
+[[param]]
+name = "network"
+type = "String"
+default = "\"bitcoin\".into()"
+doc = "Which Bitcoin network to use."
+
+[[param]]
+name = "datadir"
+type = "String"
+default = "\"~/.kernel-node\".into()"
+doc = "Data directory for blockchain and configuration."
+
+[[param]]
+name = "connect"
+type = "String"
+optional = true
+doc = "Connect only to this node (format: ip:port or hostname:port)"

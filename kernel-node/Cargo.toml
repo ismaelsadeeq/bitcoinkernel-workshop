@@ -1,0 +1,28 @@
+[package]
+name = "kernel-node"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+configure_me = "0.4.0"
+tokio = { version = "1", features = ["net", "rt"] }
+tokio-util = { version = "0.7", features = ["compat"] }
+clap = { version = "4", features = ["derive"] }
+home = "0.5"
+log = "0.4"
+ctrlc = "3.4.5"
+env_logger = "0.10"
+
+bitcoinkernel = "0.1"
+addrman = { package = "bitcoin-address-book", git = "https://github.com/rustaceanrob/bitcoin-address-book", rev = "4417e4c8f5d04245947c758b73fb0dc9e7e0bd15" }
+bitcoin = { git = "https://github.com/rust-bitcoin/rust-bitcoin", default-features = false, rev = "16cc257c3695dea0e7301a5fa9cab44b8ed60598" }
+p2p = { package = "bitcoin-p2p", git =  "https://github.com/2140-dev/bitcoin-p2p.git", rev = "322c4abb2a947f3f2d85991a0cb450249c68c1ea" }
+
+[build-dependencies]
+configure_me_codegen = "0.4.0"
+
+[package.metadata.configure_me]
+spec = "config_spec.toml"
+
+[[bin]]
+name = "node"
