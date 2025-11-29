@@ -38,7 +38,7 @@ Attendees will use the bitcoinkernel Rust crate API documentation to fill in mis
 
 4. **Complete the exercises:**
    ```
-   git grep "TODO:"
+   git grep "TODO"
    ```
    vim filename, edit, save and exit all the files.
 
