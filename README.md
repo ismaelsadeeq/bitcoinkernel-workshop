@@ -14,7 +14,7 @@ This workshop is going to be done using the following crates:
 3. [**addrman**](https://docs.rs/bitcoin-addrman/latest/bitcoin_addrman/) - Manages gossiped Bitcoin peer addresses in the network
 4. [**rust-bitcoin**](https://docs.rs/bitcoin/latest/bitcoin/index.html) - Handles consensus encoding, decoding, and Bitcoin types and primitives
 
-Attendees will use the bitcoinkernel Rust crate API documentation to fill in missing lines of code in the toy node (based on the [kernel-node repository](https://github.com/sedited/kernel-node/tree/master)), then compile the node and perform an initial block download (IBD) on the Bitcoin signet network.
+Attendees will use the bitcoinkernel Rust crate API documentation to fill in missing lines of code in the toy node, then compile the node and perform an initial block download (IBD) on the Bitcoin signet network.
 
 ### Requirements
 - An operating system with Docker installed
